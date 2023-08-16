@@ -64,11 +64,7 @@ cp /home/chatwoot/chatwoot/deployment/chatwoot.target /etc/systemd/system/chatwo
 ```
 
 ```bash
-systemctl daemon-reload
-```
-
-```bash
-systemctl restart chatwoot.target
+systemctl daemon-reload && systemctl restart chatwoot.target
 ```
 
 <hr />
