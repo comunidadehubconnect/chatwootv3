@@ -32,7 +32,11 @@ cd chatwoot
 ```
 
 ```bash
-git checkout master && git pull
+git checkout master
+```
+
+```bash
+git pull
 ```
 
 ```bash
