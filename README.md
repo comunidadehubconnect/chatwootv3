@@ -52,6 +52,10 @@ RAILS_ENV=production bundle exec rake db:migrate
 ```
 
 ```bash
+exit
+```
+
+```bash
 cp /home/chatwoot/chatwoot/deployment/chatwoot-web.1.service /etc/systemd/system/chatwoot-web.1.service
 ```
 
