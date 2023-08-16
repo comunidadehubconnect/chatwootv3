@@ -13,7 +13,11 @@
 <hr />
 </p>
 
+<details>
+	
 **Como atualizar Chatwoot V3**
+
+</details>
 
 ```bash
 sudo cwctl --upgrade
