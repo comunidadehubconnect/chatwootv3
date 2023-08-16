@@ -13,6 +13,12 @@
 <hr />
 </p>
 
+**Como atualizar Chatwoot V3**
+
+```bash
+sudo cwctl --upgrade
+```
+
 **Como atualizar Chatwoot V3 Manualmente**
 
 ```bash
@@ -41,6 +47,7 @@ rake assets:precompile RAILS_ENV=production
 
 ```bash
 RAILS_ENV=production bundle exec rake db:migrate
+```
 
 ```bash
 cp /home/chatwoot/chatwoot/deployment/chatwoot-web.1.service /etc/systemd/system/chatwoot-web.1.service
