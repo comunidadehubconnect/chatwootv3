@@ -13,15 +13,17 @@
 <hr />
 </p>
 
-<details>
-	
-**Como atualizar Chatwoot V3**
+<hr />
+<hr />
 
-</details>
+**Como atualizar Chatwoot V3**
 
 ```bash
 sudo cwctl --upgrade
 ```
+
+<hr />
+<hr />
 
 **Como atualizar Chatwoot V3 Manualmente**
 
@@ -72,3 +74,6 @@ systemctl daemon-reload
 ```bash
 systemctl restart chatwoot.target
 ```
+
+<hr />
+<hr />
