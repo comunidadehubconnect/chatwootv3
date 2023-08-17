@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://www.chatwoot.com/docs/img/logo.png" alt="Chatwoot-logo" width="100" />	
+	<img src="https://www.chatwoot.com/docs/img/logo.png" alt="Chatwoot-logo" width="150" />	
 	<p align="center">O Chatwoot oferece todas as ferramentas para gerenciar conversas, construir relacionamentos e encantar seus clientes em um só lugar.</p>
 </p>
 
@@ -69,7 +69,7 @@ Caso sua recompilação falhe ou encontre algum erro `ActionView::Template::Erro
 RAILS_ENV=production rake assets:clean assets:clobber assets:precompile
 ```
 
-Observação: Este comando limpará os ativos compilados existentes e recompilará todos os ativos. [Leia mais sobre isso aqui](https://edgeguides.rubyonrails.org/command_line.html#bin-rails-assets)
+Observação: Este comando limpará os assets compilados existentes e recompilará todos os assets. [Leia mais sobre isso aqui](https://edgeguides.rubyonrails.org/command_line.html#bin-rails-assets)
 
 <hr />
 <hr />
