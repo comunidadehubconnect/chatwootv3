@@ -59,11 +59,18 @@ RAILS_ENV=production bundle exec rake db:migrate
 exit
 ```
 
-
-
 ```bash
 systemctl daemon-reload && systemctl restart chatwoot.target
 ```
+
+### Caso sua recompilação falhe ou encontre algum erro `ActionView::Template::Error (Webpacker can't find application.css in /home/chatwoot/chatwoot/public/packs/manifest.json)` ou qualquer outro erro, basta executar o comando abaixo:
+
+```bash
+RAILS_ENV=production rake assets:clean assets:clobber assets:precompile
+```
+
+Observação: Este comando limpará os ativos compilados existentes e recompilará todos os ativos. [Leia mais sobre isso aqui].
+(https://edgeguides.rubyonrails.org/command_line.html#bin-rails-assets)
 
 <hr />
 <hr />
