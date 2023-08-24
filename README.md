@@ -64,7 +64,12 @@ git checkout master
 git pull
 ```
 
-Caso apareça a mensagem abaixo, basta digitar o seguinte comando: `git stash`
+Caso apareça a mensagem abaixo, basta digitar o seguinte comando:
+
+```bash
+git stash
+```
+
 ![image](https://github.com/cwmkt/chatwootv3/assets/34479816/4c707ea5-b39f-4a4c-922d-bb4a5f959c59)
 
 
