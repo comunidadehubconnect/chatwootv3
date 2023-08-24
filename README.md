@@ -23,6 +23,31 @@ sudo cwctl --upgrade
 
 **Como atualizar Chatwoot V3 Manualmente**
 
+
+### Csso esteja usando node 18 precisa ser migrado para 16 depois retornado para 18.
+
+```bash
+sudo apt-get remove nodejs
+```
+
+```bash
+sudo apt-get purge nodejs
+```
+
+```bash
+sudo apt-get autoremove
+```
+
+```bash
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+```
+
+```bash
+sudo apt-get install -y nodejs
+```
+
+### Chatwoot
+
 ```bash
 sudo -i -u chatwoot
 ```
@@ -59,10 +84,30 @@ RAILS_ENV=production bundle exec rake db:migrate
 exit
 ```
 
-
-
 ```bash
 systemctl daemon-reload && systemctl restart chatwoot.target
+```
+
+### Voltando para versão node 18
+
+```bash
+sudo apt-get remove nodejs
+```
+
+```bash
+sudo apt-get purge nodejs
+```
+
+```bash
+sudo apt-get autoremove
+```
+
+```bash
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+```
+
+```bash
+sudo apt-get install -y nodejs
 ```
 
 <hr />
