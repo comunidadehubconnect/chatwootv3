@@ -93,6 +93,14 @@ RAILS_ENV=production bundle exec rake db:migrate
 exit
 ```
 
+### Copie os novos arquivos atualizados
+
+```bash
+cp /home/chatwoot/chatwoot/deployment/chatwoot-web.1.service /etc/systemd/system/chatwoot-web.1.service
+cp /home/chatwoot/chatwoot/deployment/chatwoot-worker.1.service /etc/systemd/system/chatwoot-worker.1.service
+cp /home/chatwoot/chatwoot/deployment/chatwoot.target /etc/systemd/system/chatwoot.target
+```
+
 ```bash
 systemctl daemon-reload && systemctl restart chatwoot.target
 ```
