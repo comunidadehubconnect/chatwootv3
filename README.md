@@ -21,9 +21,9 @@ sudo cwctl --upgrade
 <hr />
 <hr />
 
-**Como atualizar Chatwoot V3 Manualmente**
+### Como atualizar Chatwoot V3 Manualmente
 
-### Chatwoot
+
 
 ```bash
 sudo -i -u chatwoot
