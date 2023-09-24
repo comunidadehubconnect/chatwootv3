@@ -23,29 +23,6 @@ sudo cwctl --upgrade
 
 **Como atualizar Chatwoot V3 Manualmente**
 
-
-### Caso esteja usando node 18 precisa ser migrado para 16 depois retornado para 18.
-
-```bash
-sudo apt-get remove nodejs -y
-```
-
-```bash
-sudo apt-get purge nodejs
-```
-
-```bash
-sudo apt-get autoremove
-```
-
-```bash
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-```
-
-```bash
-sudo apt-get install -y nodejs
-```
-
 ### Chatwoot
 
 ```bash
@@ -63,15 +40,6 @@ git checkout master
 ```bash
 git pull
 ```
-
-Caso apareça a mensagem abaixo, basta digitar o seguinte comando:
-
-```bash
-git stash
-```
-
-![image](https://github.com/cwmkt/chatwootv3/assets/34479816/4c707ea5-b39f-4a4c-922d-bb4a5f959c59)
-
 
 ```bash
 bundle
@@ -104,27 +72,4 @@ cp /home/chatwoot/chatwoot/deployment/chatwoot.target /etc/systemd/system/chatwo
 ```bash
 systemctl daemon-reload && systemctl restart chatwoot.target
 ```
-
-### Voltando para versão node 18
-
-```bash
-sudo apt-get remove nodejs
-```
-
-```bash
-sudo apt-get purge nodejs
-```
-
-```bash
-sudo apt-get autoremove
-```
-
-```bash
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-```
-
-```bash
-sudo apt-get install -y nodejs
-```
-
 
